@@ -20,7 +20,7 @@
             background-color: var(--bg-color);
         }
         .container {
-            max-width: 1200px; /* Increased width to fit 5 images nicely */
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -59,7 +59,7 @@
             font-size: 1.1rem;
             box-shadow: 0 4px 15px rgba(0,123,255,0.3);
             transition: all 0.3s ease;
-            margin-bottom: 50px; /* Space between button and images */
+            margin-bottom: 50px;
         }
         .cta-button:hover {
             background-color: #0056b3;
@@ -67,11 +67,11 @@
             box-shadow: 0 6px 20px rgba(0,123,255,0.4);
         }
 
-        /* New Gallery Styles */
+        /* Gallery Styles */
         .showcase-container {
             display: flex;
             justify-content: center;
-            align-items: center; /* Vertically align centers */
+            align-items: center;
             flex-wrap: wrap;
             gap: 15px;
             margin-top: 20px;
@@ -79,7 +79,7 @@
         }
         
         .screenshot {
-            width: 180px; /* Base width */
+            width: 180px;
             height: auto;
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -87,9 +87,8 @@
             border: 4px solid white;
         }
 
-        /* The Center Image (1.png) styles */
         .screenshot.center-stage {
-            width: 210px; /* Slightly larger */
+            width: 210px;
             z-index: 10;
             box-shadow: 0 15px 35px rgba(0,123,255,0.25);
             transform: scale(1.05);
@@ -163,21 +162,24 @@
         }
         footer a {
             color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
             text-decoration: underline;
         }
 
-        /* Mobile Adjustments */
         @media (max-width: 768px) {
             .showcase-container {
                 gap: 10px;
             }
             .screenshot {
-                width: 45%; /* Show 2 per row on mobile */
+                width: 45%;
             }
             .screenshot.center-stage {
-                width: 48%; /* Keep ratio on mobile */
+                width: 48%;
                 transform: none;
-                order: -1; /* On mobile, maybe put the main image first? Or keep center. Let's keep sequence. */
+                order: -1;
             }
         }
     </style>
@@ -195,9 +197,7 @@
         <div class="showcase-container">
             <img src="2.png" alt="Expense Breakdown" class="screenshot">
             <img src="3.png" alt="Smart Budgeting" class="screenshot">
-            
             <img src="1.png" alt="MoneyUp Main Interface" class="screenshot center-stage">
-            
             <img src="4.png" alt="Multi-currency Wealth" class="screenshot">
             <img src="5.png" alt="FIRE Analysis" class="screenshot">
         </div>
@@ -250,7 +250,9 @@
         <p>&copy; 2026 Nodland Studio. All rights reserved.</p>
         <p>Contact Support: <a href="mailto:support@nodlandstudio.com">support@nodlandstudio.com</a></p>
         <p>
-            <a href="/privacy">Privacy Policy</a>
+            <a href="https://sites.google.com/view/moneyup-privacypolicy" target="_blank">Privacy Policy</a>
+            |
+            <a href="https://sites.google.com/view/moneyup-terms" target="_blank">Terms of Service</a>
         </p>
     </footer>
 
