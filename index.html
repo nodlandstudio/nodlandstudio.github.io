@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MoneyUp: Track expenses, budget smartly, grow wealth and achieve your FIRE freedom goal.">
+    <title>MoneyUp - Expense Tracker & FIRE Journey</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, #fff 0%, #f0f4f8 100%);
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 20px; /* Optional: adds rounded corners to logo */
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin: 0 0 10px;
+            color: #2c3e50;
+        }
+        .subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,123,255,0.4);
+        }
+        .hero-image-container {
+            margin-top: 50px;
+            padding: 0 20px;
+        }
+        .hero-image {
+            max-width: 300px; /* Adjusted specifically for phone screen portrait aspect */
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        /* Screenshot Gallery Styles */
+        .screenshot-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .screenshot-gallery img {
+            width: 200px; /* Fixed width for uniform look of phone screenshots */
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        .screenshot-gallery img:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+
+        .guide-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .why-list {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .why-list li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #343a40;
+            color: #adb5bd;
+            margin-top: 60px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .screenshot-gallery img {
+                width: 45%; /* On mobile, show 2 per row */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="MoneyUp Logo" class="logo">
+        
+        <h1>MoneyUp</h1>
+        <p class="subtitle">Track expenses, budget smartly, grow wealth and achieve your FIRE freedom goal.</p>
+        
+        <a href="#" class="cta-button">Download on Google Play</a>
+
+        <div class="hero-image-container">
+            <img src="1.png" alt="MoneyUp App Interface Main" class="hero-image">
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2 class="section-title">Key Features 🌟</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📊 Comprehensive Expense Tracking</h3>
+                    <p>Log daily transactions easily. Visualize spending with intuitive Trends and Breakdown charts to know exactly where your money goes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💰 Smart Budgeting</h3>
+                    <p>Set monthly budgets to keep spending in check. Get real-time updates on your remaining budget to avoid overspending.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔥 Exclusive FIRE Mentor</h3>
+                    <p>Track Net Worth growth and use our advanced calculator to forecast your financial freedom date based on real habits.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📈 Wealth Management</h3>
+                    <p>Track assets and liabilities in one place. View your complete financial health at a glance with multi-currency support.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: #fff; padding: 60px 20px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+            <h2 class="section-title">See MoneyUp in Action 📱</h2>
+            <div class="screenshot-gallery">
+                <img src="2.png" alt="Expense Breakdown">
+                <img src="3.png" alt="Smart Budgeting">
+                <img src="4.png" alt="Multi-currency Wealth">
+                <img src="5.png" alt="FIRE Analysis">
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">How it Works 💡</h2>
+            <p style="text-align: center; margin-bottom: 30px; color: #666;">A quick guide to your home screen and navigation.</p>
+            <div style="text-align: center;">
+                <img src="6.png" alt="MoneyUp Home Screen Guide Diagram" class="guide-image">
+            </div>
+        </section>
+
+        <section style="text-align: center;">
+            <h2 class="section-title" style="margin-bottom: 20px;">Why MoneyUp? ✨</h2>
+            <ul class="why-list">
+                <li>✅ Clean, ad-free interface tailored for clarity.</li>
+                <li>✅ Multi-currency support for global travelers.</li>
+                <li>✅ Secure and private data handling.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nodland Studio. All rights reserved.</p>
+        <p>Contact Support: <a href="mailto:support@nodlandstudio.com">support@nodlandstudio.com</a></p>
+        <p>
+            <a href="/privacy">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>
